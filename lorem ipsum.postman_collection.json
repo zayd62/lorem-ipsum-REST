@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "1db4ff80-d860-4684-8348-a7ce2753334a",
+		"name": "lorem ipsum",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://www.lipsum.com/feed/json",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "amount",
+							"value": "256",
+							"description": "a number",
+							"type": "text"
+						},
+						{
+							"key": "what",
+							"value": "paragraphs",
+							"description": "values: paragraphs. words, bytes, lists",
+							"type": "text"
+						},
+						{
+							"key": "start",
+							"value": "yes",
+							"type": "text"
+						},
+						{
+							"key": "generate",
+							"value": "Generate+Lorem+Ipsum",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.lipsum.com/feed/json",
+					"protocol": "https",
+					"host": [
+						"www",
+						"lipsum",
+						"com"
+					],
+					"path": [
+						"feed",
+						"json"
+					]
+				},
+				"description": "generate lorem ipsum"
+			},
+			"response": []
+		}
+	]
+}
